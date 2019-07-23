@@ -1,0 +1,7 @@
+declare module "react-icons/lib/fa/medium"
+declare module "react-icons/lib/fa/github"
+declare module "react-icons/lib/fa/paper-plane"
+declare module "react-icons/lib/fa/envelope"
+declare module "*.png"
+declare module "*.jpg"
+declare module "*.svg"

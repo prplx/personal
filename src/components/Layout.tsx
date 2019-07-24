@@ -2,7 +2,8 @@ import React, { Fragment } from "react"
 import { Helmet } from "react-helmet"
 import { Global, css } from "@emotion/core"
 import { useTranslation } from "react-i18next"
-import { I18n } from "../components"
+import { I18n } from "."
+import { Seo } from "."
 import { mediaDesktop } from "../styles"
 import bg from "../images/bg@2x.jpg"
 
@@ -11,9 +12,9 @@ export default ({ children }) => {
 
   return (
     <Fragment>
+      <Seo title={t("title")} />
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{t("title")}</title>
         <link rel="canonical" href={`${process.env.SITE_URL}`} />
         <link
           href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic"

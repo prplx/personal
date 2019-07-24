@@ -21,8 +21,11 @@ export default () => {
       <Wrapper>
         <Header>
           <LocaleLink
-            href="#"
-            onClick={() => i18n.changeLanguage(language === "ru" ? "en" : "ru")}
+            href=""
+            onClick={e => {
+              e.preventDefault()
+              i18n.changeLanguage(language === "ru" ? "en" : "ru")
+            }}
           >
             <LocaleImg src={language === "ru" ? en : ru}></LocaleImg>
             <span>{language === "ru" ? "In English" : "На русском"}</span>
@@ -142,6 +145,7 @@ const Avatar = styled.img`
   min-height: 140px;
   border-radius: 50%;
   border: 2px solid white;
+  box-shadow: 20px 40px 100px rgba(0, 0, 0, 0.25);
 `
 const Links = styled.div`
   display: flex;
@@ -181,11 +185,16 @@ const Link = styled.a`
   }
 `
 const LocaleLink = styled.a`
-  margin-top: 36px;
-  margin-right: 40px;
+  margin-top: 24px;
+  margin-right: 32px;
   font-size: 13px;
   text-decoration: none;
   color: white;
+
+  ${mediaDesktop`
+    margin-top: 36px;
+    margin-right: 40px;
+  `}
 `
 
 const LocaleImg = styled.img`

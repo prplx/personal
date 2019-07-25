@@ -11,8 +11,6 @@ i18n
     fallbackLng: "en",
     ns: ["common"],
     defaultNS: "common",
-    // debug: true,
-    // have a common namespace used around the full app
     react: {
       wait: true,
       useSuspense: false,

@@ -2,15 +2,15 @@ import i18n from "i18next"
 import XHR from "i18next-xhr-backend"
 import LanguageDetector from "i18next-browser-languagedetector"
 import { initReactI18next } from "react-i18next"
-import translationRu from "../locales/ru/common.json"
-import translationEn from "../locales/en/common.json"
+import translationRu from "../../public/locales/ru/common.json"
+import translationEn from "../../public/locales/en/common.json"
 
 const resources = {
   ru: {
-    translation: translationRu,
+    common: translationRu,
   },
   en: {
-    translation: translationEn,
+    common: translationEn,
   },
 }
 
@@ -21,6 +21,7 @@ i18n
   .init({
     resources,
     fallbackLng: "en",
+    // debug: true,
     ns: ["common"],
     defaultNS: "common",
     react: {

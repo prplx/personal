@@ -7,7 +7,7 @@ import { Seo } from "."
 import { mediaDesktop } from "../styles"
 import bg from "../images/bg@2x.jpg"
 
-export default ({ children }) => {
+export default ({ children }: { children: React.ReactNode }) => {
   const [t] = useTranslation()
 
   return (

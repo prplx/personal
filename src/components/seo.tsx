@@ -17,7 +17,7 @@ function SEO({
 }: {
   description?: string
   lang?: string
-  meta?: Array<any>
+  meta: Array<any>
   title: string
 }) {
   const { site } = useStaticQuery(

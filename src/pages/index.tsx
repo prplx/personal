@@ -41,25 +41,25 @@ export default () => {
           <Links>
             <Link
               css={getSvgFillColor("#00ab6c")}
-              href={`${process.env.MEDIUM_URL}`}
+              href={`${process.env.GATSBY_MEDIUM_URL}`}
             >
               <Medium />
             </Link>
             <Link
               css={getSvgFillColor("#6e5494")}
-              href={`${process.env.GITHUB_URL}`}
+              href={`${process.env.GATSBY_GITHUB_URL}`}
             >
               <Github />
             </Link>
             <Link
               css={getSvgFillColor("#0088cc")}
-              href={`${process.env.TELEGRAM_URL}`}
+              href={`${process.env.GATSBY_TELEGRAM_URL}`}
             >
               <Telegram />
             </Link>
             <Link
               css={getSvgFillColor("#ea4335")}
-              href={`mailto:${process.env.EMAIL}`}
+              href={`mailto:${process.env.GATSBY_EMAIL}`}
             >
               <Email />
             </Link>

@@ -15,7 +15,7 @@ export default ({ children }: { children: React.ReactNode }) => {
       <Seo title={t("title")} />
       <Helmet>
         <meta charSet="utf-8" />
-        <link rel="canonical" href={`${process.env.SITE_URL}`} />
+        <link rel="canonical" href={`${process.env.GATSBY_SITE_URL}`} />
         <link
           href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic"
           rel="stylesheet"

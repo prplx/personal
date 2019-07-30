@@ -75,6 +75,7 @@ function SEO({
           name: `twitter:description`,
           content: metaDescription,
         },
+        { name: `keywords`, content: "prplx mmystiq mystiq kos" },
       ].concat(meta)}
     />
   )

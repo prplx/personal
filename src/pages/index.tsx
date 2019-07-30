@@ -8,7 +8,7 @@ import Telegram from "react-icons/lib/fa/paper-plane"
 import Email from "react-icons/lib/fa/envelope"
 import { Layout } from "../components"
 import { mediaDesktop } from "../styles"
-import avatar from "../images/avatar@2x.png"
+import avatar from "../images/avatar@2x.jpg"
 import en from "../images/en.svg"
 import ru from "../images/ru.svg"
 

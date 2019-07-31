@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import { I18n } from "."
 import { Seo } from "."
 import { mediaDesktop } from "../styles"
-import bg from "../images/bg@2x.jpg"
+import bg from "../images/bg.jpg"
 
 export default ({ children }: { children: React.ReactNode }) => {
   const [t] = useTranslation()

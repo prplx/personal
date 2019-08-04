@@ -86,8 +86,8 @@ const Wrapper = styled.div`
     grid-template-areas:
       "header header"
       "content void";
-    grid-template-rows: 150px auto;
-    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 130px auto;
+    grid-template-columns: 1fr 1fr;
     margin: 0;
     height: 100vh;
   `}
@@ -136,6 +136,7 @@ const SubTitle = styled.h3`
 `
 const Paragraph = styled.p`
   color: #c9d3da;
+  /* color: white; */
   line-height: calc(var(--max-font-size) * 1.5);
   margin: 0;
 `

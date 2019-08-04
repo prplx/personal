@@ -50,7 +50,7 @@ const globalStyles = css`
     background: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 45%;
+    /* background-position-x: 45%; */
     color: white;
     -webkit-font-smoothing: antialiased;
 

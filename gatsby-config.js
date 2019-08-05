@@ -42,5 +42,13 @@ module.exports = {
         destination: `/locales`,
       },
     },
+    {
+      resolve: `gatsby-plugin-yandex-metrika`,
+      options: {
+        trackingId: process.env.YANDEX_METRIKA_ID,
+        webvisor: false,
+        trackHash: true,
+      },
+    },
   ],
 }

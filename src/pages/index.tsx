@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import { useTranslation } from "react-i18next"
 import { css } from "@emotion/core"
 import Medium from "react-icons/lib/fa/medium"
+import Linkedin from "react-icons/lib/fa/linkedin"
 import Github from "react-icons/lib/fa/github"
 import Telegram from "react-icons/lib/fa/paper-plane"
 import Email from "react-icons/lib/fa/envelope"
@@ -45,6 +46,13 @@ export default () => {
               target="_blank"
             >
               <Medium />
+            </Link>
+            <Link
+              css={getSvgFillColor("#0077b5")}
+              href={`${process.env.GATSBY_LINKEDIN_URL}`}
+              target="_blank"
+            >
+              <Linkedin />
             </Link>
             <Link
               css={getSvgFillColor("#6e5494")}

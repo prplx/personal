@@ -1,0 +1,12 @@
+{
+  "build": {
+    "env": {
+      "GATSBY_SITE_URL": "@site_url",
+      "GATSBY_TELEGRAM_URL": "@telegram_url",
+      "GATSBY_MEDIUM_URL": "@medium_url",
+      "GATSBY_GITHUB_URL": "@github_url",
+      "GATSBY_EMAIL": "@email",
+      "GATSBY_LINKEDIN_URL": "@linkedin_url"
+    }
+  }
+}

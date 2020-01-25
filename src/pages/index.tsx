@@ -21,7 +21,7 @@ export default () => {
     <Layout>
       <Wrapper>
         <Header>
-          <LocaleLink
+          {/* <LocaleLink
             href=""
             onClick={e => {
               e.preventDefault()
@@ -30,15 +30,13 @@ export default () => {
           >
             <LocaleImg src={language === "ru" ? en : ru}></LocaleImg>
             <span>{language === "ru" ? "In English" : "На русском"}</span>
-          </LocaleLink>
+          </LocaleLink> */}
         </Header>
         <Main>
           <Avatar src={avatar} alt={t("title")} />
           <Title>{t("title")}</Title>
           <SubTitle>{t("position")}</SubTitle>
           <Paragraph>{t("description.part1")}</Paragraph>
-          <br />
-          <Paragraph>{t("description.part2")}</Paragraph>
           <Links>
             <Link
               css={getSvgFillColor("#00ab6c")}
@@ -133,13 +131,13 @@ const Title = styled.h1`
 const SubTitle = styled.h3`
   margin: 0;
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-weight: bold;
   line-height: 1.6em;
 
   ${mediaDesktop`
     margin-top: 0.83vw;
-    margin-bottom: 3.33vw;
+    margin-bottom: 1vw;
   `}
 `
 const Paragraph = styled.p`
@@ -167,7 +165,7 @@ const Links = styled.div`
 
   ${mediaDesktop`
     justify-content: flex-start;
-    margin-top: 3.2vw;
+    margin-top: 2vw;
   `}
 `
 

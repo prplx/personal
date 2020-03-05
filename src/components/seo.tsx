@@ -76,6 +76,7 @@ function SEO({
           content: metaDescription,
         },
         { name: `keywords`, content: "prplx mmystiq mystiq kos" },
+        { name: `yandex-verification`, content: "1789530e993c4d85" },
       ].concat(meta)}
     />
   )
